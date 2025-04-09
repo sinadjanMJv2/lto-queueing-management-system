@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queue Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Queue Management</h1>
+    <div id="user-side">
+      <h2>Join the Queue</h2>
+      <input type="text" id="user-name" placeholder="Enter your name">
+      <button id="join-queue">Join Queue</button>
+    </div>
+    <h3>Queue:</h3>
+    <ul id="queue-list"></ul>
+    <p>Go to <a href="counter1.html">Counter 1</a> or <a href="counter2.html">Counter 2</a> for serving.</p>
+  </div>
+
+  <!-- Pop-Up for Ticket -->
+  <div id="ticket-popup" class="modal hidden">
+    <div class="modal-content">
+      <h2>Your Ticket</h2>
+      <p id="ticket-number"></p>
+      <button id="print-ticket">Print Ticket</button>
+      <button id="close-popup">Close</button>
+    </div>
+  </div>
+
+  <script src="queue.js"></script>
+</body>
+</html>
